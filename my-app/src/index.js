@@ -4,9 +4,16 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+import { Provider } from 'react-redux'
+import { createStore, applyMiddleware } from 'redux';
+import rootReducer from './redux/reducers/index';
+import ReduxThunk from 'redux-thunk'
+
 ReactDOM.render(
-  
-    <App />,
+    <Provider store={createStore(rootReducer, {}, applyMiddleware(ReduxThunk))}>
+      <App />
+    </Provider>,
+    
   
   document.getElementById('root')
 );

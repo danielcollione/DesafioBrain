@@ -36,6 +36,19 @@ export const Box = styled.div`
   }
 `;
 
+export const Box2 = styled.div`
+  display: block
+  justify-content: center;
+
+  @media (min-width: 768px) {
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: 1024px) {
+    flex-wrap: wrap;
+  }
+`;
+
 export const BoxTitle = styled.h3`
   color: #333;
   font-size: 2rem;

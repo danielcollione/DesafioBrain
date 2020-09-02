@@ -1,0 +1,31 @@
+.medida {
+  width: 89%;
+}
+
+@media screen and (min-width: 768px) {
+  .medida{
+    width: 35%
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .medida{
+    width: 35%
+  }
+}
+
+.medida2 {
+  width: 89%;
+}
+
+@media screen and (min-width: 768px) {
+  .medida2{
+    width: 17.5%
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .medida2{
+    width: 17.5%
+  }
+}
